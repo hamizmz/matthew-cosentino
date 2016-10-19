@@ -62,8 +62,8 @@
 				<article>
 					<h1><a name="king-lal">King Lal EP</a></h1>
 					<div class="Header">
-						<iframe width="100%" height="390" src="https://www.youtube.com/watch?v=NxnRT4-DLws" frameborder="0" allowfullscreen></iframe>
-						<!-- <img src="assets/king-lal-01.jpg" /><br /> -->
+						<!-- VIDEO -->
+						<div class="Video" id="NxnRT4-DLws" width="100%" height="390"></div>
 						<img src="assets/king-lal-02.jpg" />
 					</div>
 					<section class="Info">
@@ -71,22 +71,23 @@
 							A 5 song collaboration of original music with Toronto
 							artist King Lal
 						</p>
-						<iframe width="100%" height="240" src="https://www.youtube.com/embed/hlbVFUhHkY0" frameborder="0" allowfullscreen></iframe>
+						<!-- VIDEO -->
+						<div class="Video" id="hlbVFUhHkY0" width="100%" height="240"></div>
 					</section>
 				</article>
 				
 				<article>
 					<h1><a name="sax-in-the-city">Sax in the City</a></h1>
 					<div class="Header">
-						<iframe width="100%" height="390" src="https://www.youtube.com/embed/PRXDmzLl4oU" frameborder="0" allowfullscreen></iframe>
-						<!-- <img src="assets/sax-02.jpg" /> -->
+						<!-- VIDEO -->
+						<div class="Video" id="PRXDmzLl4oU" width="100%" height="390"></div>
 					</div>
 					<section class="Info">
 						<p>
 							A collection of unpolished original music turned album
 						</p>
-						<iframe width="100%" height="236" src="https://www.youtube.com/embed/NxnRT4-DLws" frameborder="0" allowfullscreen style="display:none;"></iframe>
-						<iframe width="100%" height="236" src="https://www.youtube.com/embed/ABYwDNFXPqI" frameborder="0" allowfullscreen></iframe>
+						<!-- VIDEO -->
+						<div class="Video" id="ABYwDNFXPqI" width="100%" height="236"></div>
 					</section>
 				</article>
 			</section>
@@ -117,6 +118,25 @@
 			</menu>
 		</footer>
 		</div>
+		
 		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript">
+			var tag = document.createElement('script');
+			tag.src = 'https://www.youtube.com/iframe_api';
+			var firstScriptTag = document.getElementsByTagName('script')[0];
+			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+			
+			var _videos = document.getElementsByClassName('Video');
+			function onYouTubeIframeAPIReady() {
+				var vids = Array.from(_videos);
+				vids.forEach(function(vid) {
+					var player = new YT.Player(vid.id, {
+						width: vid.getAttribute('width'),
+						height: vid.getAttribute('height'),
+						videoId: vid.id
+					});
+				});
+			}
+		</script>
 	</body>
 </html>
