@@ -51,7 +51,7 @@ function onscroll(e) {
 	
 	_header.style.transform = render_transform(y * 0.5) +
 		" " +
-		render_scale(Math.max(0, 1 - y * 0.0003));
+		render_scale(Math.max(0, 1 - y * 0.0001));
 	_header.style.opacity = 1 - y * 0.0015;
 };
 

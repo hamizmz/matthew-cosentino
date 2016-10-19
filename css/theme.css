@@ -80,19 +80,19 @@
 }
 
 /* PT Serif - Bold */
-@font-face {
+/*@font-face {
 	font-family:"PT Serif";
 	font-style:normal;
 	font-weight:bold;
 	src:url("fonts/PT_Serif/PT_Serif-Web-Bold.ttf");
-}
+}*/
 /* PT Serif - Bold Italic */
-@font-face {
+/*@font-face {
 	font-family:"PT Serif";
 	font-style:italic;
 	font-weight:bold;
 	src:url("fonts/PT_Serif/PT_Serif-Web-BoldItalic.ttf");
-}
+}*/
 
 
 /*
@@ -149,10 +149,12 @@ a:hover {
 }
 
 blockquote {
-	font-family:"PT Serif", Georgia, serif;
+	/*font-family:"PT Serif", Georgia, serif;*/
 	font-weight:normal;
 	font-style:italic;
 	opacity:0.8;
+	color:#e5e5e5;
+	font-size:22pt;
 	/*text-shadow:1px 1px 0 #fff;*/
 }
 
@@ -170,7 +172,7 @@ article h1 {
 }
 
 aside {
-	font-family:"PT Serif", Georgia, serif;
+	/*font-family:"PT Serif", Georgia, serif;*/
 	font-weight:normal;
 }
 
