@@ -136,6 +136,10 @@ a {
 	text-decoration:none;
 }
 
+a[name] {
+	color:#e5e5e5;
+}
+
 a img {
 	border:none;
 }
