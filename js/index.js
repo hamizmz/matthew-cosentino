@@ -4,7 +4,7 @@
 
 */
 var _dist = 0;
-var _header = document.getElementsByTagName('h1')[0];
+var _header = document.getElementsByTagName('img')[0];
 var _content = document.getElementsByClassName('Content')[0];
 var _aside = document.getElementsByTagName('aside')[0];
 
@@ -51,10 +51,11 @@ function onscroll(e) {
 	
 	_header.style.transform = render_transform(y * 0.5) +
 		" " +
-		render_scale(Math.max(0, 1 - y * 0.0004));
-	_header.style.opacity = 1 - y * 0.001;
+		render_scale(Math.max(0, 1 - y * 0.0003));
+	_header.style.opacity = 1 - y * 0.0015;
 };
 
 // OUR "LOOP"
 onscroll({});
 window.addEventListener('scroll', onscroll, false);
+window.addEventListener('resize', onscroll, false);

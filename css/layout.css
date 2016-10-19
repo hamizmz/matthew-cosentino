@@ -9,11 +9,11 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	margin:0.5em 0 0.75em;
+	margin:0.5em 0 0.6125em;
 }
 
 h1 {
-	font-size:36pt;
+	font-size:28pt;
 }
 
 h2 {
@@ -46,16 +46,12 @@ header {
 	flex-wrap:nowrap;
 	justify-content:center;
 	align-items: center;
-}
-
-header h1 {
-	padding-top:20px;
-	margin:0;
-}
-
-header h1 img {
-	width:100%;
+	
 	overflow:hidden;
+}
+
+header img {
+	width:125%;
 }
 
 header span {
@@ -92,7 +88,7 @@ nav {
 }
 
 nav li {
-	margin-bottom:10px;
+	margin-bottom:5px;
 	font-size:16pt;
 }
 
@@ -158,6 +154,7 @@ section.Content {
 	min-height:20vh;
 	max-width:960px;
 	margin:0 auto;
+	padding:20px 0 0;
 }
 
 section.Projects {
@@ -198,7 +195,7 @@ section.Projects {
 	}
 	
 	h1 {
-		font-size:28pt;
+		font-size:22pt;
 	}
 	
 	h2 {
