@@ -59,7 +59,7 @@ header span {
 }
 
 footer {
-	padding:20px;
+	padding:12px 20px 12px;
 	margin:0;
 }
 
@@ -277,7 +277,7 @@ section.Projects {
 @media (max-width:559px) {
 	footer span {
 		float:none;
-		padding:0 0 20px 0;
+		padding:0 0 10px 0;
 	}
 	
 	footer menu li {
