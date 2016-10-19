@@ -114,9 +114,16 @@ menu li {
 
 menu li a {
 	display:block;
+	width:44px;
 	height:47px;
 	overflow:hidden;
 	opacity:0.8;
+}
+
+menu li a img {
+	position:relative;
+	left:-2px;
+	width:auto;
 }
 
 menu li a:hover {
